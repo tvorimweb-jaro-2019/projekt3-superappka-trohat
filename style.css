@@ -23,7 +23,7 @@ body {
     line-height: 1.5;
 }
 
-.obal {
+main {
     width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: white;
@@ -31,3 +31,101 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding: 10px 30px;
+    font-size: 12px;
+}
+
+nav ul :first-child {
+    font-weight: 700;
+}
+
+.image {
+    padding: 30px;
+    background-image: url('images/pozadi.jpg');
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.image img {
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.image h1 {
+    font-weight: 400;
+    font-size: 70px;
+    margin: 0;
+}
+
+.image article {
+    margin: 30px 0 10px 0;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.image ul {
+    display: flex;
+    list-style: none;
+}
+
+.image ul li {
+    padding: 10px;
+    margin: 35px 10px 15px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.image ul li:hover {
+    background-color: #48418e;
+}
+
+.vyhody {
+    display: flex;
+}
+
+.vyhody section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.vyhody img {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.vyhody h4 {
+    margin: 7px;
+    color: #48418e;
+}
+
+.vyhody article {
+    padding: 5px 30px 20px 30px;
+    font-size: 12px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #48418e;
+}
